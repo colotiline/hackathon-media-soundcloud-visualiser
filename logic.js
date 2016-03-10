@@ -10,6 +10,8 @@ $(document).ready(function() {
   var audio = new Audio();
   audio.crossOrigin = 'anonymous';
 
+  var context = new AudioContext();
+
   SC.initialize({
     client_id: clientId
   });
@@ -58,7 +60,6 @@ $(document).ready(function() {
       audio.crossOrigin = 'anonymous';
       audio.src = topTrack.stream_url + '?client_id=' + clientId;
 
-      var context = new AudioContext();
       var analyser = context.createAnalyser();
       var canvas = $('#content__analyser');
       var canvasContext = canvas[0].getContext('2d');
