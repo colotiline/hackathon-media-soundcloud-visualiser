@@ -1,0 +1,63 @@
+* {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+body {
+  background: #FFFFFF;
+  overflow: hidden;
+}
+
+.content {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  margin-bottom: -30px;
+}
+
+#content__analyser {
+  width: 100%;
+  height: 80%;
+  background-color: #FFFFFF;
+  opacity: 0.7;
+}
+
+.content__search {
+  width: 90%;
+  height: 30px;
+  text-align: center;
+  margin: 10px 4.8%;
+  font-size: 24px;
+  border: none;
+  border-bottom: 1px solid #333333;
+  background-color: #FFFFFF;
+}
+
+.content__search:focus {
+  outline: none;
+}
+
+.footer {
+  width: 100%;
+  padding-left: 10px;
+  padding-top: 5px;
+  height: 30px;
+  background-color: #FFFFFF;
+}
+
+.footer .footer__singer,
+.footer .footer__author {
+  color: #333333;
+  text-decoration: none;
+  font-size: 10pt;
+  float: left;
+}
+
+.footer .footer__singer {
+  display: none;
+}
+
+.footer .footer_soundcloud-logo {
+  float: right;
+  margin-right: 20px;
+  margin-top: -10px;
+}
