@@ -32,7 +32,11 @@ $(document).ready(function() {
 
       for (var i = 0; i < tracks.length; i++) {
         var track = tracks[i];
-
+        
+        if(!track.streamable) {
+          continue;
+        }
+        
         var playLikesRatio = track.likes_count / track.playback_count;
         if(playLikesRatio > topPlayLikesRatio) {
           topPlayLikesRatio = playLikesRatio;
